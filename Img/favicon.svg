@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente para o espiral azul -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b75bb" />
+      <stop offset="100%" stop-color="#0b2e59" />
+    </linearGradient>
+    
+    <!-- Gradiente para o espiral amarelo/dourado -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5af33" />
+      <stop offset="100%" stop-color="#eb9418" />
+    </linearGradient>
+    
+    <!-- Sombra suave para dar profundidade no favicon -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0b2e59" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Fundo Circular suave -->
+  <circle cx="256" cy="256" r="240" fill="#f4f8fc" />
+
+  <!-- Grupo do Ícone Rolice (R espiralizado) -->
+  <g filter="url(#dropShadow)">
+    <!-- Camada Azul (Estrutura Externa e Pernas do R) -->
+    <path fill="url(#blueGradient)" d="
+      M 256 70 
+      C 150 70 70 150 70 256 
+      C 70 340 125 410 200 435 
+      C 180 400 170 355 185 315 
+      C 195 290 215 270 240 260 
+      C 270 248 305 255 325 280 
+      C 345 305 340 345 315 370 
+      C 290 395 250 400 215 390 
+      C 250 430 305 442 355 420 
+      C 415 394 445 325 435 260 
+      C 425 185 365 125 290 105 
+      C 279 102 267 100 256 100 
+      Z" />
+
+    <!-- Camada Dourada (Curva Interna do R e Espiral) -->
+    <path fill="url(#goldGradient)" d="
+      M 256 120 
+      C 181 120 120 181 120 256 
+      C 120 310 152 357 198 378 
+      C 185 345 188 305 208 278 
+      C 228 250 265 238 298 250 
+      C 328 260 348 288 345 320 
+      C 342 350 318 375 288 380 
+      C 330 375 365 345 375 302 
+      C 388 245 360 188 312 155 
+      C 295 143 276 135 256 135 
+      Z" />
+      
+    <!-- Detalhe Central (Miolo do R) -->
+    <circle cx="265" cy="225" r="32" fill="#0b2e59" />
+  </g>
+</svg>

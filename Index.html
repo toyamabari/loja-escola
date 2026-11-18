@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Rolice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="icon" href="Img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <p class="faixa-promo">
+        Frete grátis acima de R$ 77,7 e 10% OFF com o cupom <strong>ROLICEDIVINA</strong>
+    </p>
+
+    <header>
+        <div class="container cabecalho-linha">
+
+            <a class="logo" href="Index.html">
+                <img src="Img/favicon.svg" alt="Logotipo Loja Rolice">Loja Rolice
+            </a>
+
+            <form class="busca" action="Index.html">
+                <label class="sr-only" for="busca">Buscar produtos</label>
+                <input type="search" id="busca" name="busca" placeholder="Busque: abraço, tempestade, luz...">
+                <button type="submit">Buscar</button>
+            </form>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="Index.html" aria-current="page">Início</a></li>
+                    <li><a href="Index.html#catalogo">Catálogo</a></li>
+                    <li><a href="Index.html#regras">Regras</a></li>
+                    <li><a href="pages/Checkout.html">Carrinho <span class="carrinho-contador" hidden>0</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="destaque">
+            <div class="container destaque-conteudo">
+                <div class="destaque-texto">
+                    <p class="destaque-selo">Promoção Ultra Roliça</p>
+                    <h1>Até 30% OFF em produtos <span class="destaque-cor">roliços</span></h1>
+                    <p class="destaque-descricao">Abraço roliço, tempestade engarrafada e feitiço de luz. Aproveite
+                        antes que a realidade descubra.</p>
+                    <div class="destaque-botoes">
+                        <a class="botao" href="#catalogo">Ver ofertas</a>
+                        <a class="botao botao-claro" href="#regras">Como funciona</a>
+                    </div>
+                    <ul class="destaque-provas">
+                        <li><strong>5 ★</strong> avaliação dos clientes</li>
+                        <li><strong>+777 mil</strong> pedidos roliços</li>
+                        <li><strong>0</strong> quinas reais</li>
+                    </ul>
+                </div>
+                <img class="destaque-imagem" src="Img/caixa rolice.png"
+                    alt="Caixa de produtos roliços, abraço roliço, tempestade roliça">
+            </div>
+        </section>
+
+        <div class="container">
+
+            <ul class="vantagens" aria-label="Vantagens">
+                <li>
+                    <span class="vantagens-icone" aria-hidden="true">🛴</span>
+                    <div>
+                        <strong>Frete grátis</strong>
+                        <p>No envio padrão a partir de R$ 77,7.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="vantagens-icone" aria-hidden="true">🎟️</span>
+                    <div>
+                        <strong>10% OFF no checkout</strong>
+                        <p>Use o cupom <strong>ROLICEDIVINA</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <span class="vantagens-icone" aria-hidden="true">🏃‍♀️</span>
+                    <div>
+                        <strong>A pé</strong>
+                        <p>Entrega em até 15 dias.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <section class="secao" id="catalogo">
+                <div class="secao-topo">
+                    <div>
+                        <p class="secao-rotulo">Ofertas da semana</p>
+                        <h2>Produtos roliços</h2>
+                    </div>
+                    <p class="catalogo-contagem"></p>
+                </div>
+
+                <div class="filtros" role="group" aria-label="Filtrar por categoria"></div>
+
+                <div class="produtos"></div>
+
+                <p class="catalogo-vazio" hidden>Nenhum produto encontrado. Tente outra palavra ou categoria.</p>
+            </section>
+
+            <section class="secao regras" id="regras">
+                <p class="secao-rotulo">Como funciona</p>
+                <h2>As 6 regras roliças</h2>
+                <p class="regras-intro">Todo produto precisa cumprir pelo menos uma destas regras. É assim que
+                    garantimos que tudo aqui é roliço.</p>
+
+                <ul class="regras-lista">
+                    <li>
+                        <span class="regras-icone" aria-hidden="true">🥔</span>
+                        <div>
+                            <strong>Parece uma batata</strong>
+                            <p>Se colocar numa cesta de feira e alguém confundir com um tubérculo, está aprovado.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="regras-icone" aria-hidden="true">🛞</span>
+                        <div>
+                            <strong>Rola morro abaixo</strong>
+                            <p>Se você soltar no topo de uma ladeira, precisa chegar até o final sem quebrar e sem mudar de rota.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="regras-icone" aria-hidden="true">🦔</span>
+                        <div>
+                            <strong>Sem quina nem dó</strong>
+                            <p>Proibido qualquer ângulo de 90 graus. Tem que ser tão redondo que se você tropeçar nele, ganha uma massagem.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="regras-icone" aria-hidden="true">🍉</span>
+                        <div>
+                            <strong>Mais pesado que parece</strong>
+                            <p>Você olha e acha que é leve como uma bexiga, mas quando tenta levantar precisa usar as duas mãos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="regras-icone" aria-hidden="true">🟡</span>
+                        <div>
+                            <strong>Cores de salgadinho</strong>
+                            <p>A paleta de cores precisa lembrar obrigatoriamente milho, queijo estaladinho ou molho amarelo de cheddar.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="regras-icone" aria-hidden="true">🧩</span>
+                        <div>
+                            <strong>Parece um erro de fabricação</strong>
+                            <p>A primeira pessoa que olhar precisa perguntar "isso veio com defeito ou é assim mesmo?".</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="secao novidades">
+                <div class="novidades-texto">
+                    <h2>Receba ofertas roliças</h2>
+                    <p>Um e-mail por semana com lançamentos dos melhores itens roliços.</p>
+                </div>
+                <form class="novidades-form" novalidate>
+                    <label class="sr-only" for="novidades-email">Seu e-mail</label>
+                    <input type="email" id="novidades-email" name="email" placeholder="seu@email.com">
+                    <button class="botao" type="submit">Quero receber</button>
+                    <p class="novidades-mensagem" role="status"></p>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <div class="rodape-grade">
+
+                <section>
+                    <h2>Loja Rolice</h2>
+                    <p>A loja de produtos Roliços. Cada item segue uma regra pontual para o roliçamento.</p>
+                </section>
+
+                <nav>
+                    <h2>Navegue</h2>
+                    <ul>
+                        <li><a href="Index.html">Página inicial</a></li>
+                        <li><a href="Index.html#catalogo">Catálogo</a></li>
+                        <li><a href="Index.html#regras">Como escolhemos os produtos</a></li>
+                    </ul>
+                </nav>
+
+                <section>
+                    <h2>Atendimento</h2>
+                    <ul>
+                        <li>Quando eu achar de bom tom atender</li>
+                        <li>Pix, cartão e boleto</li>
+                        <li>Troca grátis em até 7 dias</li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <p class="rodape-aviso">Projeto educacional: loja, produtos, preços e pagamentos são fictícios.</p>
+
+        </div>
+    </footer>
+
+    <script src="JavaScript/Produtos.js"></script>
+    <script src="JavaScript/Carrinho.js"></script>
+    <script src="JavaScript/Index.js"></script>
+
+</body>
+</html>
